@@ -1,7 +1,7 @@
 #demarer un contenaire ubunto et ouvrir les ports necessaire et creer workspace app pour mes scripts
 docker run -it --name streaming-container -p 9092:9092 -p 27017:27017 -p 9042:9042 -p 8501:8501 -v $(pwd):/app ubuntu:22.04
 
-
+ps aux | grep ingest_data.py 
 
 docker pull ubuntu
 

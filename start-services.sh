@@ -11,6 +11,7 @@ kafka-server-start /opt/confluent/etc/kafka/server.properties > /dev/null 2>&1 &
 
 # Démarrer MongoDB
 mongod --fork --logpath /var/log/mongodb.log
+mongosh --host localhost --port 27017
 
 # Démarrer Cassandra
 cassandra -f > /dev/null 2>&1 &
